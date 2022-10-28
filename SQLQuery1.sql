@@ -1,0 +1,17 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [Id]
+      ,[AboutMe]
+      ,[Age]
+      ,[CreationDate]
+      ,[DisplayName]
+      ,[DownVotes]
+      ,[EmailHash]
+      ,[LastAccessDate]
+      ,[Location]
+      ,[Reputation]
+      ,[UpVotes]
+      ,[Views]
+      ,[WebsiteUrl]
+      ,[AccountId]
+  FROM [StackOverflow2010].[dbo].[Users]
+WHERE upvotes > 10000 AND upvotes < 100000;
